@@ -1,0 +1,210 @@
+/* CSS Reset */
+/* Resetting margins, paddings, and borders */
+html, body,
+h1, h2, h3, h4, h5, h6,
+a, p, span,
+em, small, strong,
+sub, sup,
+mark, del, ins, strike,
+abbr, dfn,
+blockquote, q, cite,
+code, pre,
+ol, ul, li, dl, dt, dd,
+div, section, article,
+main, aside, nav,
+header, hgroup, footer,
+img, figure, figcaption,
+address, time,
+audio, video,
+canvas, iframe,
+details, summary,
+fieldset, form, label, legend,
+table, caption,
+tbody, tfoot, thead,
+tr, th, td {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Box sizing */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Sizing - Height */
+body {
+  min-height: 100vh;
+}
+
+/* Typography */
+body {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+* {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+a,
+a:visited {
+  color: inherit;
+}
+
+/* Resetting specific element styles */
+ol,
+ul {
+  list-style: none;
+}
+
+img,
+video {
+  max-width: 100%;
+}
+
+img {
+  border-style: none;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* General styles */
+body {
+  background: #F3F3F3;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  align-items: center;
+	display: flex;
+	justify-content: center;
+	min-height: 100vh;
+  padding: 2rem;
+}
+
+form {
+  animation-name: bounceIn;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	background-color: #fff;
+	border-radius: 6px;
+	border: 1px solid #ccc;
+  box-shadow: 1px 1px 18px #888888;
+  flex-basis: 430px;
+	padding: 50px 40px;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.user-input label {
+  display: block;
+  font-weight: bold;
+  font-size: .9rem;
+  margin-bottom: 5px;
+}
+
+.user-input input[type=text], 
+.user-input input[type=password] {
+  border: 1px solid #444141;
+	display: block;
+  height: 50px;
+  margin-bottom: 25px;
+  outline: none;
+  padding: 0 8px;
+  width: 100%;
+}
+
+.user-input input[type=text]:focus,
+.user-input input[type=password]:focus {
+	outline: thin dotted;
+}
+
+.login {
+	align-items: center;
+	display: flex;
+	margin-bottom: 60px;
+}
+
+.login input[type=submit] {
+	background: #5F3AD0;
+	border-radius: 30px;
+	border: 1px solid transparent;
+	color: #fff;
+  cursor: pointer;
+  flex: 40%;
+	font-weight: bold;
+  padding: 15px 40px;
+	transition: all .3s linear;
+}
+
+.login input[type=submit]:hover {
+  background-color: #fff;
+  border: 1px solid #444141;
+  color: #5F3AD0;
+}
+
+.login input[type=submit]:active {
+  background-color: #abd03a;
+  border: 1px solid transparent;
+  color: #fff;
+  transition: none;
+}
+
+.login a {
+  color: #3e3e3e;
+  flex: 60%;
+  transition: all .3s linear;
+	text-align: right;
+}
+
+.login a:hover {
+  color: #000;
+}
+
+.login a:active {
+	color: #abd03a;
+  transition: none;
+}
+
+.signup {
+  text-align: center;
+  font-weight: bold;
+}
+
+.signup a {
+  text-decoration: underline;
+  transition: all .3s linear;
+}
+
+.signup a:hover {
+  color: rgba(0, 0, 0, .7);
+}
+
+.signup a:active {
+  color: #abd03a;
+  transition: none;
+}
+
+@media (max-width: 500px) {
+  .login {
+    flex-wrap: wrap;
+  }
+  
+  .login a {
+    text-align: center;
+    margin-top: 15px;
+  }
+}
