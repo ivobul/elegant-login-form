@@ -93,9 +93,6 @@ body {
 }
 
 form {
-  animation-name: bounceIn;
-  animation-duration: 1s;
-  animation-timing-function: linear;
   background-color: #fff;
   border-radius: 6px;
   border: 1px solid #ccc;
