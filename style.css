@@ -129,13 +129,13 @@ a {
   outline: thin dotted;
 }
 
-.form__login-section {
+.form__login {
   align-items: center;
   display: flex;
   margin-bottom: 60px;
 }
 
-.form__submit-btn {
+.form__login-btn {
   background: #5F3AD0;
   border-radius: 30px;
   border: 1px solid transparent;
@@ -147,36 +147,36 @@ a {
   transition: all .3s linear;
 }
 
-.form__submit-btn:hover {
+.form__login-btn:hover {
   background-color: #fff;
   border: 1px solid #444141;
   color: #5F3AD0;
 }
 
-.form__submit-btn:active {
+.form__login-btn:active {
   background-color: #abd03a;
   border: 1px solid transparent;
   color: #fff;
   transition: none;
 }
 
-.form__wrong-password {
+.form__login-wrong-password {
   color: #3e3e3e;
   flex: 60%;
   transition: all .3s linear;
   text-align: right;
 }
 
-.form__wrong-password:hover {
+.form__login-wrong-password:hover {
   color: #000;
 }
 
-.form__wrong-password:active {
+.form__login-wrong-password:active {
   color: #abd03a;
   transition: none;
 }
 
-.form__signup-section {
+.form__signup {
   text-align: center;
   font-weight: bold;
 }
@@ -196,15 +196,15 @@ a {
 }
 
 @media (max-width: 575px) {
-  .form__login-section {
+  .form__login {
     flex-wrap: wrap;
   }
   
-  .form__submit-btn {
-	flex: 100%;
+  .form__login-btn {
+    flex: 100%;
   }
   
-  .form__wrong-password {
+  .form__login-wrong-password {
     text-align: center;
     margin-top: 15px;
   }
