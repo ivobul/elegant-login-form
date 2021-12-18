@@ -79,7 +79,7 @@ a {
 }
 
 /* General styles */
-body {
+.body {
   background: #F3F3F3;
   font-family: 'Montserrat', sans-serif;
 }
@@ -92,29 +92,29 @@ body {
   padding: 2rem;
 }
 
-form {
+.form {
   background-color: #fff;
   border-radius: 6px;
   border: 1px solid #ccc;
   box-shadow: 1px 1px 18px #888888;
   flex-basis: 430px;
-  padding: 50px 40px;
+  padding: 40px;
 }
 
-.title {
-  font-size: 2rem;
+.form__title {
+  font-size: 1.8rem;
   margin-bottom: 30px;
 }
 
-.user-input label {
+.form__input-label {
   display: block;
   font-weight: bold;
   font-size: .9rem;
   margin-bottom: 5px;
 }
 
-.user-input input[type=text], 
-.user-input input[type=password] {
+.form__input-text, 
+.form__input-password {
   border: 1px solid #444141;
   display: block;
   height: 50px;
@@ -124,18 +124,18 @@ form {
   width: 100%;
 }
 
-.user-input input[type=text]:focus,
-.user-input input[type=password]:focus {
+.form__input-text:focus,
+.form__input-password:focus {
   outline: thin dotted;
 }
 
-.login {
+.form__login-section {
   align-items: center;
   display: flex;
   margin-bottom: 60px;
 }
 
-.login input[type=submit] {
+.form__submit-btn {
   background: #5F3AD0;
   border-radius: 30px;
   border: 1px solid transparent;
@@ -143,17 +143,17 @@ form {
   cursor: pointer;
   flex: 40%;
   font-weight: bold;
-  padding: 15px 40px;
+  padding: 10px 20px;
   transition: all .3s linear;
 }
 
-.login input[type=submit]:hover {
+.form__submit-btn:hover {
   background-color: #fff;
   border: 1px solid #444141;
   color: #5F3AD0;
 }
 
-.login input[type=submit]:active {
+.form__submit-btn:active {
   background-color: #abd03a;
   border: 1px solid transparent;
   color: #fff;

@@ -8,21 +8,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="style.css">
   </head>
-  <body>
+  <body class="body">
     <div class="container">
-      <form>
-        <h2 class="title">Sign in</h2>
-        <div class="user-input">
-          <label for="username">Username:</label>
-          <input type="text" id="username" name="username">
-          <label for="password">Password:</label>
-          <input type="password" id="password" name="password">
+      <form class="form">
+        <h2 class="form__title">Sign in</h2>
+        <div class="form__input-section">
+          <label class="form__input-label" for="username">Username:</label>
+          <input id="username" class="form__input-text" type="text" name="username">
+          <label class="form__input-label" for="password">Password:</label>
+          <input id="password" class="form__input-password" type="password" name="password">
         </div>
-        <div class="login">
-          <input type="submit" value="Sign in">
+        <div class="form__login-section">
+          <input class="form__submit-btn" type="submit" value="Sign in">
           <a href="">Forgot your password?</a>
         </div>
-        <div class="signup">
+        <div class="form__signup-section">
           <p>Don't have an account?</p>
           <a href="">Sign up</a>
         </div>
