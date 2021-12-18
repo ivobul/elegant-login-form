@@ -98,7 +98,7 @@ a {
   border: 1px solid #ccc;
   box-shadow: 1px 1px 18px #888888;
   flex-basis: 430px;
-  padding: 40px;
+  padding: 50px 40px;
 }
 
 .form__title {
@@ -160,47 +160,51 @@ a {
   transition: none;
 }
 
-.login a {
+.form__wrong-password {
   color: #3e3e3e;
   flex: 60%;
   transition: all .3s linear;
   text-align: right;
 }
 
-.login a:hover {
+.form__wrong-password:hover {
   color: #000;
 }
 
-.login a:active {
+.form__wrong-password:active {
   color: #abd03a;
   transition: none;
 }
 
-.signup {
+.form__signup-section {
   text-align: center;
   font-weight: bold;
 }
 
-.signup a {
+.form__signup-link {
   text-decoration: underline;
   transition: all .3s linear;
 }
 
-.signup a:hover {
+.form__signup-link:hover {
   color: rgba(0, 0, 0, .7);
 }
 
-.signup a:active {
+.form__signup-link:active {
   color: #abd03a;
   transition: none;
 }
 
-@media (max-width: 500px) {
-  .login {
+@media (max-width: 575px) {
+  .form__login-section {
     flex-wrap: wrap;
   }
   
-  .login a {
+  .form__submit-btn {
+	flex: 100%;
+  }
+  
+  .form__wrong-password {
     text-align: center;
     margin-top: 15px;
   }
